@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Create New Question</title>
+	<script type="text/javascript" src="main.js"></script>
+	
+	<style type="text/css">
+		input {
+			border: 1px solid grey;
+			border-radius: 2px;
+			border-style: outset;
+			margin: 1px;
+			width: 100%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+			}
+
+	</style>
+</head>
+
+
+<body>
+	<h1 style="text-align: center;">Create New Question</h1>
+	<form style="margin-left: 25%; margin-right: 25%; margin-top: 5%">
+		<input id="text" type="text" name="text" placeholder="Question Name">
+		<input id="function" type="text" name="function" placeholder="Specify name of function (ex. doubleNum)">
+		<input id="input" type="text" name="input" placeholder="expected input">
+		<input id="output" name="output" placeholder="expected output"></input><br>
+		<button id="btn" onclick="newQuestion()">Create New Question</button><button><a href="https://web.njit.edu/~gea6/490/teacher/newTest.html">Return to previous</a></button>
+		
+	</form>
+</body>
+</html>

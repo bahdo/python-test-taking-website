@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="studentExams.js"></script>
+	<style>
+		nav {
+		    margin: 0;
+		    padding: 0;
+    		overflow: hidden;
+    		background-color: #333;
+		}
+		nav a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		nav a:hover {
+			background-color: #111;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+	<title>Graded Exams</title>
+</head>
+<body onload="grabExams()">
+	<nav>
+		<a href="https://web.njit.edu/~gea6/490/student/studentDashboard.html">Home</a>
+		<a href="https://web.njit.edu/~gea6/490/student/availableExams.html">Take a Test</a>
+		<a href="https://web.njit.edu/~gea6/490/student/gradedExams.html">View Grades</a>
+	</nav><br>
+	<br><div id="container">
+		<ul id="gradeList">
+		</ul>
+
+		<br><button id="gradeViewBtn" onclick="breakdownGrades()">View Questions for Selected Exam</button>
+	</div>
+</body>
+</html>

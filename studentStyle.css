@@ -1,0 +1,29 @@
+ #navabar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black; 
+}
+
+#navbar-item {
+	display: inline;
+	float: left;
+}
+
+#navbar-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar-item a:hover {
+    background-color: white;
+    color: black;}
+
+.active {
+    background-color: white;
+    color: black;
+}
